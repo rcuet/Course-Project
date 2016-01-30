@@ -1,11 +1,21 @@
-# Course-Project
+# Tidy data set: Human Activity Recognition Using Smartphones Dataset
 Getting and Cleaning Data
+=========================================================================
 
-Do not forget to include a brief description of each variable and the units of measurement for each variable in your tidy data set. Read the existing documentation for a few hints. A simple dump of just the variables names is insufficient and does not a codebook make.
+The variables selected for this data set represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-                  names.avgdata.
-1                        subject
-2                       activity
+Using the dataset collected from here:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, They captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. This raw data was used as input for the next step of clean up the data described below. 
+
+The "orgdata.txt" data set contains the average for each measured variable (from 3 to 68) according each subject and each activity. 
+
+Variables
+========================================================================
+1                        subject                 
+2                       activity                
 3            time.bodyacc.mean.x
 4            time.bodyacc.mean.y
 5            time.bodyacc.mean.z
@@ -72,3 +82,19 @@ Do not forget to include a brief description of each variable and the units of m
 66      freq.bodybodygyromag.std
 67 freq.bodybodygyrojerkmag.mean
 68  freq.bodybodygyrojerkmag.std
+
+Description
+=======================================================================
+- subject: Each row identifies the subject who performed the activity wearing a smartphone (Samsung Galaxy S II) on the waist. Its range is from 1 to 30.
+- activity: Each row identifies one of the six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) recorded. 
+
+Prefixs descriptions of the following files are equivalent. 
+
+- time/freq: Time domain signals or frequency domain signals.
+- bodyacc: The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+- bodygyro: The angular velocity vector measured by the gyroscope for each sample. The units are radians/second. 
+- gravityacc:gravity acceleration signals. The units are radians/second. 
+- jerk: Jerk signals, calculated using the body linear acceleration and angular velocity derived in time.
+- mag: Magnitude of the Jerk signals three-dimensional signals calculated using the Euclidean norm. 
+- mean/std: Mean value or Standard deviation.
+- x/y/z: feature used to denote 3-axial signals in the X, Y and Z directions.
